@@ -3,6 +3,7 @@
   "description": "A clean, one-page portfolio using MDX",
   "version": "1.0.0",
   "author": "Konstantin Münster <mail@konstantin.digital>",
+  "homepage": "http://Rediet8abere.github.io/Portifolio",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -82,7 +83,9 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test develop http://localhost:9000 cy:open",
-    "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run"
+    "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
